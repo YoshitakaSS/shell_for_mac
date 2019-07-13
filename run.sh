@@ -39,6 +39,8 @@ source ~/.nvm/nvm.sh
 # bash_profileに記述
 echo -e "if [[ -s ~/.nvm/nvm.sh ]]; then \n source ~/.nvm/nvm.sh \nfi" >> .bash_profile
 
+# 安定板をインストール
+nvm install stable
 
 #################
 # 必要なアプリとか
@@ -50,6 +52,7 @@ brew install caskroom/cask/brew-cask
 # 開発環境
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install docker
 
 # エディター
 brew cask install sublime-text
@@ -67,14 +70,17 @@ brew cask install shiftit
 # その他アプリケーション
 brew cask install sourcetree
 brew cask install cyberduck
-brew cask install docker
 brew cask install sketch
 brew cask install slack
 brew cask install evernote
 brew cask install skitch
 brew cask install iterm2
 brew cask install kindle
+brew cask install postman
 brew cask install google-drive
+brew cask install mysqlworkbench
+brew cask install prepros
+brew cask install cheatsheet
 
 # プラグイン系
 vagrant plugin install vagrant-vbguest
