@@ -81,6 +81,7 @@ brew cask install google-drive
 brew cask install mysqlworkbench
 brew cask install prepros
 brew cask install cheatsheet
+brew cask install gitkraken
 
 # プラグイン系
 vagrant plugin install vagrant-vbguest
@@ -89,3 +90,4 @@ vagrant plugin install vagrant-vbguest
 brew install tree
 brew install wget
 brew install git
+
