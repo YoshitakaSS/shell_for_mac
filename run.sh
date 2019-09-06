@@ -37,7 +37,7 @@ git clone https://github.com/creationix/nvm.git ~/.nvm
 source ~/.nvm/nvm.sh
 
 # bash_profileに記述
-echo -e "if [[ -s ~/.nvm/nvm.sh ]]; then \n source ~/.nvm/nvm.sh \nfi" >> .bash_profile
+echo -e "if [[ -s ~/.nvm/nvm.sh ]]; then \n \t source ~/.nvm/nvm.sh \nfi" >> .bash_profile
 
 # 安定板をインストール
 nvm install stable
