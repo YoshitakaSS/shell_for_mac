@@ -42,6 +42,40 @@ echo -e "if [[ -s ~/.nvm/nvm.sh ]]; then \n \t source ~/.nvm/nvm.sh \nfi" >> .ba
 # 安定板をインストール
 nvm install stable
 
+
+#################
+# 必要なパッケージ
+#################
+
+# ターミナルをオシャンティーにする
+brew install starship
+echo 'eval "$(starship init bash)"' >> ~/.bash_profile
+exec $SHELL -l
+
+mkdir ~/.config
+touch ~/.config/starship.toml
+
+# ls の代替コマンド
+brew install exa
+echo "alias ls='exa -g --time-style=long-iso'" >> ~/.bashrc
+echo "alias ll='ls -al'" >> ~/.bash_profile
+exec $SHELL -l
+
+# cat の代替コマンド(Doc https://github.com/sharkdp/bat/blob/master/doc/README-ja.md)
+brew install bat
+
+# fd の代替コマンド
+brew install fd
+
+# grep の代替コマンド
+brew install ripgrep
+
+# その他
+brew install tree
+brew install wget
+brew install git
+
+
 #################
 # 必要なアプリとか
 #################
@@ -78,16 +112,14 @@ brew cask install iterm2
 brew cask install kindle
 brew cask install postman
 brew cask install google-drive
-brew cask install mysqlworkbench
 brew cask install prepros
 brew cask install cheatsheet
 brew cask install gitkraken
+brew cask install tableplus
+brew cask install spectacle
+brew cask install macwinzipper
+brew cask install  clipy
 
 # プラグイン系
 vagrant plugin install vagrant-vbguest
-
-# ツール系
-brew install tree
-brew install wget
-brew install git
 
